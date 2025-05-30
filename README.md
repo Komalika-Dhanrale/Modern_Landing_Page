@@ -4,13 +4,6 @@ A modern, responsive landing page built using Tailwind CSS (via CLI) and Font Aw
 
 ---
 
-## Demo
-
-![Landing Page Screenshot](screenshot.png)  
-*(Add your screenshot image here for visual preview)*
-
----
-
 ## Features
 
 - Responsive design optimized for desktop and mobile
@@ -43,5 +36,5 @@ A modern, responsive landing page built using Tailwind CSS (via CLI) and Font Aw
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/modern-landing-page.git
-cd modern-landing-page
+git clone https://github.com/Komalika-Dhanrale/Modern_Landing_Page.git
+cd Modern_Landing_Page
