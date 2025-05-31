@@ -8,13 +8,13 @@
   <meta name="keywords" content="landing page, tailwind css, web development, services, contact" />
   <meta name="author" content="Komalika Dhanrale" />
 
-  <!-- Tailwind CSS CDN -->
+
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome Icons -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-  <!-- Animations -->
+  
   <style>
     html { scroll-behavior: smooth; }
     .fade-in { animation: fadeIn 1s ease forwards; opacity: 0; }
@@ -27,17 +27,17 @@
 </head>
 <body class="bg-gradient-to-b from-purple-700 via-pink-600 to-pink-50 text-gray-900 font-sans">
 
-  <!-- Header -->
+  
   <header class="bg-gradient-to-r from-purple-900 via-purple-700 to-pink-700 py-4 shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
       <h1 class="text-3xl font-extrabold text-white cursor-pointer fade-in delay-1">MyCompany</h1>
       
-      <!-- Hamburger Button (visible on small screens) -->
+      
       <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
         <i class="fas fa-bars"></i>
       </button>
       
-      <!-- Navigation Links -->
+      
       <nav id="menu" class="hidden md:flex space-x-8 font-semibold fade-in delay-2">
         <a href="#services" class="text-purple-200 hover:text-white transition">Services</a>
         <a href="#about" class="text-purple-200 hover:text-white transition">About</a>
@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  
   <section class="text-white text-center py-28 px-6 bg-gradient-to-r from-purple-800 via-pink-700 to-pink-600 shadow-lg fade-in delay-3">
     <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Build Your Future with Us</h2>
     <p class="text-xl mb-8 max-w-3xl mx-auto drop-shadow-md">Professional development and top-quality web solutions using modern technologies like Tailwind CSS.</p>
@@ -56,7 +56,7 @@
     </a>
   </section>
 
-  <!-- Our Services -->
+  
   <section id="services" class="py-20 px-6 max-w-7xl mx-auto fade-in delay-4">
     <h2 class="text-4xl font-bold text-purple-900 text-center mb-16">Our Services</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <!-- Explore Our Features -->
+  
   <section id="features" class="py-20 max-w-7xl mx-auto px-6 fade-in mt-20">
     <h2 class="text-4xl font-bold text-purple-900 text-center mb-16">Explore Our Features</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -115,7 +115,7 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
+  
   <section id="about" class="bg-pink-100 py-20 px-6 max-w-7xl mx-auto fade-in mt-20">
     <h2 class="text-4xl font-bold text-purple-900 text-center mb-16">What Our Interns Say</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -152,7 +152,7 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+
   <section id="faq" class="py-20 px-6 max-w-7xl mx-auto fade-in mt-20">
     <h2 class="text-4xl font-bold text-purple-900 text-center mb-16">Frequently Asked Questions</h2>
     <dl class="space-y-8 max-w-3xl mx-auto text-purple-900">
@@ -175,7 +175,7 @@
     </dl>
   </section>
 
-  <!-- Contact Us -->
+  
   <section id="contact" class="bg-gradient-to-r from-purple-700 via-pink-600 to-pink-700 text-white py-20 px-6 max-w-7xl mx-auto rounded-xl shadow-lg fade-in mt-20">
     <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
     <form action="#" method="POST" class="max-w-3xl mx-auto space-y-6">
@@ -195,7 +195,7 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  
   <footer class="bg-gradient-to-r from-purple-900 via-purple-700 to-pink-700 text-pink-200 py-8 mt-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <p>&copy; 2025 MyCompany. All rights reserved.</p>
@@ -220,7 +220,8 @@
     </div>
   </footer>
 
-  <!-- Script for menu toggle and smooth scroll -->
+
+  
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('menu');
@@ -230,14 +231,15 @@
       menu.classList.toggle('hidden');
     });
 
-    // Smooth scrolling for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
-          // Close mobile menu after click
+          
+          
           if (!menu.classList.contains('hidden')) {
             menu.classList.add('hidden');
             menuBtn.setAttribute('aria-expanded', false);
